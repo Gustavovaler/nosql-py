@@ -9,13 +9,13 @@ database.insert("articulos", {"id":1,"nombre":"gustavo"})
 
 database.show("articulos")
 
-database.showOne("articulos", ("clave", "valor"))
+database.findOne("articulos", {"nombre": "pedro"})
 
-database.showAll("articulos", ("clave", "valor"))
+database.findAll("articulos", {"nombre": "pedro"})
 
-database.deleteOne("articulos", ("clave", "valor"))
+database.deleteOne("articulos",{"nombre": "pedro"} )
 
-database.deleteAll("articulos", ("clave", "valor"))
+database.deleteAll("articulos", {"nombre": "pedro"})
 
 database.deleteCollection("articulos")
 

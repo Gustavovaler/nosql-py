@@ -5,13 +5,11 @@ import os
 
 
 
-class DataObject:
-    pass
-
-
 class Manager:
     pass
 
+class DataObject:
+    pass
 
 class DatacollectionManager(Manager):
 

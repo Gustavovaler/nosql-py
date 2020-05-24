@@ -27,17 +27,18 @@ class Nosqlite(main.DatabaseManager):
         print("deleted {}".format(collection_name))
 
 
-    def showOne(self, collection_name, param=()):
-        print("find into {} where {} value {}".format(collection_name, param[0], param[1]))
+    def findOne(self, collection_name, dat={}):
+        print("find  ONe into {} where {} value {}".format(collection_name,list(dat)[0],dat[list(dat)[0]]))
+       
 
-    def showAll(self, collection_name, param=()):
-        print("find ALL into {} where {} value {}".format(collection_name, param[0], param[1]))
+    def findAll(self, collection_name,dat={}):
+        print("find  ALL into {} where {} value {}".format(collection_name,list(dat)[0],dat[list(dat)[0]]))
 
-    def deleteOne(self, collection_name, param=()):
-        print("delete into {} where {} value {}".format(collection_name, param[0], param[1]))
+    def deleteOne(self, collection_name,dat={}):
+        print("delete into {} where {} value {}".format(collection_name,list(dat)[0],dat[list(dat)[0]]))
 
-    def deleteAll(self, collection_name, param=()):
-        print("delete  ALL into {} where {} value {}".format(collection_name, param[0], param[1]))
+    def deleteAll(self, collection_name,dat={}):
+        print("delete into {} where {} value {}".format(collection_name,list(dat)[0],dat[list(dat)[0]]))
 
 
 
